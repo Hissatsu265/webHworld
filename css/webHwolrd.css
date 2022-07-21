@@ -1,0 +1,447 @@
+.web{
+    background-color: #161616;
+    /* height:3000px; */
+    /* max-width:2000px; */
+    /* min-width: 600px; */
+}
+/* ----------------------------------------- */
+.tieude{
+    position: relative;
+    height:15rem;
+    /* margin-top: 12px;     */
+    /* background-color: #161616; */
+}
+.padd{
+    height:10px;
+    background-color: #161616;
+}
+.img_tieude
+{
+    position: absolute;
+    top:0;
+    left:90px;
+    padding:7%;
+    background: transparent url(img/anhHworld.png) no-repeat;
+    cursor: pointer;
+    background-size: cover;
+}
+.tieude a{
+    letter-spacing: 0.5rem;
+    position: absolute;
+    top: 9rem;
+    left: 24.5rem;
+    color: aliceblue;
+    font-size: 5.7rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+.login{
+    position: absolute;
+    height:2.5rem;
+    background-color: rgb(9 13 10 / 73%);
+    left:10rem;
+    right:10rem;
+    top:15.1rem;
+    box-shadow: 0 0 1rem rgba(255,255,255,0.3);
+ }
+ /* .tieude .tiemkiem{
+    position: absolute;
+    width:25rem;
+    height:4rem;
+    right:10rem;
+    top:7.8rem;
+    font-size: 1.5rem;
+ } */
+ .tieude ul{
+    display:flex;
+    /* float: right; */
+    position: absolute;
+    top:7.8rem;
+    right:10rem;    
+    /* padding-right: 10rem; */
+    /* padding-top: 7.8rem; */
+ }
+ .tieude li{
+    list-style: none;
+ }    
+ .tieude .tieude_icon{
+    color:black;
+    font-size: 3rem;
+    background-color: aquamarine;
+    width:2.8rem;
+    height:2.5rem;
+    cursor: pointer; 
+    /* box-sizing: border-box; */
+ }
+
+ .tieude .timkiem{
+    font-size: 1.6rem;
+    width:18rem;
+    height:3rem;
+ }
+ .tieude .type-search{
+    height:3rem;
+    width:18rem;
+    font-size: 1.6rem;
+ }
+/* ----------------------------------------------------- */
+#header{
+/* height: 120px; */
+/* padding-top: 0.8rem; */
+position: relative;
+}
+#header ul{
+    position: absolute;
+    left:5.9rem;
+    right:10rem;
+    top:1.8rem;
+    display: flex;
+    justify-content: space-between;
+    margin-left:0;
+    flex-flow: row wrap;
+}
+#header li{
+    flex: 1 0;
+    background-color: #fff;
+    margin-left: 0.1rem;
+    margin-bottom: 0.1rem;
+    list-style: none;
+    padding: 0.1rem;
+    cursor: pointer;
+    text-align: center;
+    line-height: 2.5rem;
+    border-style: solid;
+    border-color: black;
+}
+#header li a{
+   text-decoration: none;
+   color:black;
+   font-size: 1.8rem;
+   transition: font-size linear 0.1s;
+   
+}
+/* --------------------------------- */
+#header .timtruyen ul{
+    display: none;
+    animation: Fadein ease-in-out 0.4s;
+   }
+#header .header_navbar:hover .header_listitem{
+    color:rgb(40, 68, 229);
+    font-size: 2rem;
+}
+#header .timtruyen:hover ul{
+    display: block;
+    position: absolute;
+    width: 18rem;
+    font-size: 1.8rem;
+    top: 4rem;
+    left: 39.3rem;
+    box-shadow: 0 0 1rem #fff;
+    padding-left: 0;
+}
+#header .list_finding:hover{
+    color:white;
+    background-color: #161616;
+}
+.bridge{
+    position: absolute;
+    display: block;
+    width:17.5rem;
+    height:1rem;
+    top:3rem;
+}
+.imgloli_modal{
+    position: fixed;
+    margin: 104px 0 0 151px;
+    width: 231px;
+    height: 229px;
+    background-size: 120px;
+    /* background-color: aquamarine; */
+    background: transparent url(img/pixlr-bg-result.png) no-repeat;
+}
+
+
+/* ------------------------------ */
+
+/* ------------------------- */
+.manga-item{
+    border: 1px solid #666;
+    background-color: #2b2b2b;
+    margin: 4px;
+}
+.contain_body{
+    margin-top: 100px;
+    /* background-color: #fff;     */
+}
+.contain_tieude-hot{
+    background-color:#000;
+    border: 1px solid #666;
+}
+.contain-tieudiem{
+    border: 1px solid #666;
+    background-color: rgb(11, 245, 62);
+    margin: 10px 4px;
+    /* width:100%; */
+    /* padding:16px 0; */
+    /* display: inline-block; */
+    /* float:right; */
+    display: flex;
+}
+.contain-thinhhanh{
+    /* float:left; */
+    font-size: 1.8rem;
+    font-weight: 450;
+    margin:2px 8px;
+    background-color: #b5f6b7;
+    padding:3px 4px;
+    /* cursor: pointer; */
+    border-radius: 2px;
+
+}
+.contain_tieude-list{
+    list-style: none;
+    display: flex;
+    margin-top: 10px;
+    padding-left: 0;
+}
+.manga-item-link{
+    text-decoration: none;
+    color:black;
+}
+.img-manga{
+    padding-top:100%;
+    margin-top:16px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    
+}
+.name-manga{
+    margin:10px;
+    color:#fff;
+    font-weight: 700;
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 2rem;
+    height: 4rem;
+    overflow: hidden;
+    display: block;
+    display:-webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:2;
+    transition: font-size linear 0.2s;
+}
+.name-manga:hover{
+    color:aquamarine;
+    font-size: 1.7rem;
+}
+.manga__item-position{
+   margin-top: 10px;
+}
+.infor-manga{
+    /* position: absolute; */
+    color:#fff;
+    margin-top: -16px;
+    font-weight: 450;
+    font-size: 1.5rem;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+    display: block;
+}
+
+.box__manga{
+    margin-top: 30px;
+    background-color: #000;
+    border:1px solid #666;
+}
+.img-quangcao{
+  padding-top: 100%;
+  background: transparent url(img/images\ \(4\).jpg) no-repeat;
+  background-size: contain;
+  background-position: center;   
+}
+h1{
+    color: #000;
+    font-size: 2.5rem;
+    line-height: 2.8rem;
+    text-align: center;
+    margin-top: -215px;
+    margin-left: -57px;
+}
+.box-add-img{
+    height: 100%;
+    width: 100%;
+}
+.add-img{
+    position: relative;
+    padding-top: 100%;     
+    background: transparent url(img/167\(1\).png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    top:22%;
+    left:-18%;
+}
+.adver-img{
+    margin-top: -31px;
+    margin-bottom: -75px;
+}
+.message11{
+    position: relative;
+    width:100%;
+    height: 100%;
+    /* display: none; */
+    /* text-align: center; */
+    /* border-radius: 10px; */
+}
+.message{
+    position: absolute;
+    width: 50%;
+    height: 16%;
+    font-size: 1.8rem;
+    background-color: #fff;
+    text-align: center;
+    line-height: 2rem;
+    border-radius: 10px;
+    border: 2px solid #666;
+    top:38%;
+    left:-198%;
+    box-shadow: 0 0 1rem rgb(255,255,255,0.8);
+    border-left: none;
+    display: none;
+}
+.arrow-left {
+    display: none;
+
+    position: absolute;
+    width:0px;
+    height:0px;
+    border-bottom:1.5rem solid transparent;
+    border-top:1.5rem solid transparent;
+    border-right:1.5rem solid #fff; /* Tam giác phải được đổ màu */
+    top:41%;
+    right:296%;
+}
+.advertise:hover .message{
+    display: block;
+}
+.advertise:hover .arrow-left{display:block;}
+/* ------------------- */
+.page-number{
+    /* border: 1px solid #666; */
+   margin: 10px 2px 15px 2px;
+   height:40px;
+   /* background-color: #b5f6b7; */
+}
+.page-number-list{
+    list-style: none;
+    display: flex;
+    height:100%;
+    width: 100%;
+    padding: 0;
+}
+
+.page-number-item{
+    margin:0 2px;
+}
+.page-text{
+    font-size: 1.8rem;
+    width: 26px;
+    height:26px;
+    border:1px solid #666;
+    background-color: aliceblue;
+    text-align: center;
+    line-height:26px;
+    cursor: pointer;
+}
+.page-text:hover{
+    background-color: #73d776;
+    color: #fff;
+}
+.firstchild{
+    width:50px;
+    /* background-color: gray; */
+}
+.khongbamdc{
+    cursor:auto;
+}
+
+/* ------------------------------ */
+
+section{
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+.wage{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    left:0;
+    background-image: url(img/wave.png);
+    background-size: 1200px 100px ;
+}
+ section .wage.wage1{
+    animation: animate 30s linear infinite;
+    z-index: 100;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom:0;
+}
+section .wage.wage2{
+    animation: animate2 15s linear infinite;
+    z-index: 99;
+    opacity: 0.7;
+    animation-delay:-5s;
+    bottom:2%;
+} 
+section .wage.wage3{
+    animation: animate1 30s linear infinite;
+    z-index: 98;
+    opacity: 0.5;
+    animation-delay:-2s;
+    bottom:3.5%;
+} 
+section .wage.wage4{
+    animation: animate2 15s linear infinite;
+    z-index: 97;
+    opacity: 0.4;
+    animation-delay:-7s;
+    bottom:5%;
+} 
+.message-footer{
+    background-color: #fff;
+    height:60px;
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 450;
+}
+.face{
+    text-decoration: none;
+}
+/* --------------------------- */
+.titlehentai{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0;
+    margin: 0;
+    font-family: none;
+   line-height: normal;
+}
+.title-hentaiw{
+    position: relative;
+}
+.title-hworld1{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    font-size: 18em;
+}
+.title-hworld1:nth-child(1){
+    color:transparent;
+    -webkit-text-stroke: 1.5px #03a9f4;
+}
+.title-hworld1:nth-child(2){
+    color:#03a9f4;
+    animation: animate1 4s ease-in-out infinite; 
+}

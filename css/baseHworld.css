@@ -1,0 +1,224 @@
+
+*{
+    box-sizing: inherit;
+}
+html{
+    font-size:62.5%;
+    line-height: 1.6rem;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box; 
+}
+.grid{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    
+
+}
+.grid_full-width
+{
+     width:100%;
+}
+.grid_row{
+    display:flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+.grid_colum-1{
+padding-left: 12px;
+padding-right: 12px;
+width:8.3333%;
+}
+.grid_colum-10{
+padding-left: 12px;
+padding-right: 12px;
+width:83.3333%;
+}
+.grid_colum-10-5{
+    padding-left: 12px;
+    padding-right: 12px;
+    width:20%;
+}
+.grid_colum-10-5-3{
+    padding-left: 12px;
+    padding-right: 12px;
+    width:30%;
+}
+.grid_colum-10-5-4{
+    padding-left: 12px;
+    padding-right: 12px;
+    width:40%;
+}
+/* ------------------------------ */
+@keyframes Fadein{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+@keyframes Growth{
+    from{
+        /* opacity:0; */
+        transform: scale(var(--growth-from));
+    }
+    to{
+        transform: scale(var(--growth-to));
+    }
+}
+@keyframes animate {
+    0%   
+    {
+     background-position-x:0 ;  
+    }   
+    100%  
+    {
+      background-position-x:1290px ;
+    }
+}
+@keyframes animate2 {
+    0%   
+    {
+     background-position-x:0 ;  
+    }
+    100%  
+    {
+      background-position-x:-1290px ;
+    }
+}
+@keyframes animate1{
+    0%,100%{
+        clip-path: polygon(0 56%, 13% 46%, 30% 46%, 42% 55%, 55% 63%, 70% 61%, 86% 57%, 100% 48%, 100% 99%, 0% 99%);
+    }
+    50%{
+        clip-path: polygon(0 56%, 13% 64%, 24% 64%, 37% 59%, 56% 48%, 69% 42%, 88% 40%, 100% 48%, 100% 99%, 0% 99%);
+    }
+}
+/* modal */
+.modal{
+    position: fixed;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    /* background-color: rgba(255,255,255,0.5); */
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    animation: Fadein linear 0.8s;
+}
+.modal_layout{
+    position: absolute;
+    height:100%;
+    width:100%;
+}
+.modal_body{
+    width: 500px;
+    --growth-from:0.6;
+    --growth-to:1;
+
+    /* height:100px; */
+    background-color: #fff;
+    margin:auto;
+    z-index: 1;
+    border-radius: 4px;
+animation: Growth linear 0.2s;
+}
+
+.form_auther{
+    padding:0  32px;
+}
+.form_header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 28px;
+    padding-bottom:20px ; 
+}
+.form_header-dk{
+    font-size: 2.8rem;
+}
+.form_header-btn{
+    font-size: 2.4rem;
+    color:rgb(11, 84, 167);
+}
+.form_contain-member{
+    /* width:100%; */
+    padding-top: 16px;
+}
+.form_contain-input{
+    width:100%;
+    height:36px;
+    font-size: 1.6rem;
+    /* text-align: right; */
+    /* margin-left: 12px; */
+    padding-left: 12px;
+    border:1px solid #dbdbdb;
+    border-radius: 4px;
+}
+.form_footer{
+    margin-top: 48px;
+    /* float:left; */
+    display: flex;
+    justify-content: right;
+}
+.btn{
+    width:120px;
+    height:36px;
+    font-size: 2rem;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    background-color: #fff;
+}
+.btn.btn--dk{
+    background-color:black;
+    color:#fff;
+    margin-left:5px;
+}
+.btn.btn--dk:hover{
+    color:aqua;
+    background-color: black;
+}
+.btn:hover{
+color:rgb(208, 20, 20);
+background-color: #dbdbdb;
+}
+.form_footer-account{
+    margin-top: 12px;
+    background-color: #f5f5f5;   
+    padding:16px 24px;   
+    display:flex;
+    justify-content: space-between;
+}
+.form_linkto{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.form_linktoface{
+    background-color: rgb(71, 87, 228);
+    height:40px;
+    width:213px;
+    border-radius: 2px;
+    color:white;
+}
+.form_linktogoogle{
+    background-color: white;
+    height:40px;
+    width:213px;
+    border-radius: 2px;
+    color:black;
+}
+.form_linktoface:hover{
+    color:black;
+}
+.form_icon{
+ /* margin-left: 2px; */
+    padding-right: 8px;
+}
